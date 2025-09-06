@@ -1,0 +1,21 @@
+#crash-games {
+    height: 720px;
+    left: 50%;
+    margin-left: -640px;
+    margin-top: -360px;
+    position: absolute;
+    top: 50%;
+    width: 1280px;
+    overflow: hidden;
+}
+
+.main-wrapper {
+    min-height: 0;
+    padding: 20px;
+    grid-gap: 10px;
+    position: relative;
+    background: #0a142a;
+    min-width: 0;
+    height: 100%;
+    width: 100%;
+}

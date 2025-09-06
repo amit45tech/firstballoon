@@ -1,0 +1,20 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting</title>
+</head>
+
+<body>
+    <script>
+        const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+        console.log(isMobile);
+        location.replace(isMobile ? "mobile.html" : "web.html");
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.statistics-area {
+    align-items: center;
+    background-color: rgba(var(--main-bg), 1);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    position: relative
+}
+
+
+
+
+.statistics-area:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 30px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+}
+
+.statistics-area:after {
+    background: linear-gradient(270deg, rgba(var(--section-bg), 1) 0, #252f3700 100%);
+    left: -180%;
+    width: 200%
+}
+
+
+.statistics-navigation {
+    align-items: center;
+    background: rgba(var(--bet-section-item), 1);
+    background: rgba(var(--custom-statistic-bg, var(--bet-section-item)), 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: auto;
+    transition: .3s ease-out;
+    z-index: 2
+}
+
+@media (hover:hover) {
+    .statistics-navigation:hover {
+        background: rgba(var(--bet-section-item), .8);
+        background: rgba(var(--custom-statistic-bg, var(--bet-section-item)), .8)
+    }
+}
+
+.statistics-navigation:active {
+    opacity: .5
+}
+
+
+@media (hover:hover) {
+    [class*=game-700] .statistics-navigation:hover {
+        background-color: rgba(var(--section-bg), .7)
+    }
+}
+
+
+.statistics-navigation {
+    border-radius: 16px;
+    height: 30px;
+    max-width: 160px;
+    padding: 0 10px
+}
+
+.statistics-navigation .statistics-img {
+    -webkit-margin-start: 6px;
+    font-size: 16px;
+    margin-inline-start: 6px
+}
+
+.statistics-navigation .statistics-text {
+    font-size: 12px;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

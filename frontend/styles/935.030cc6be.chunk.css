@@ -1,0 +1,1411 @@
+.bet-section-holder {
+    min-height: 0;
+    min-width: 0;
+    width: 100%
+}
+
+.bets-scores {
+    align-items: center;
+    display: flex;
+    min-width: 0;
+    position: relative;
+    width: 100%
+}
+
+[class*=is-Web] .bets-scores {
+    overflow: hidden
+}
+
+[class*=is-Mobile] .bets-scores {
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+[class*=is-Mobile] .bets-scores::-webkit-scrollbar {
+    display: none
+}
+
+[class*=is-Web] .loader-new+.bets-scores-item {
+    -webkit-margin-start: 48px;
+    margin-inline-start: 48px
+}
+
+[class*=is-Mobile] .loader-new+.bets-scores-item {
+    -webkit-margin-start: 4.6rem;
+    margin-inline-start: 4.6rem
+}
+
+.bets-scores-item {
+    align-items: center;
+    background-color: rgba(var(--bet-section-item), .6);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-weight: 700;
+    justify-content: center
+}
+
+.bets-scores-item:not(:last-child) {
+    -webkit-margin-end: .4rem;
+    margin-inline-end: .4rem
+}
+
+[class*=is-Web] .bets-scores-item {
+    border-radius: 100px;
+    font-size: 12px;
+    height: 28px;
+    line-height: 12px;
+    padding: 6px 10px
+}
+
+[class*=is-Mobile] .bets-scores-item {
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    height: 2.8rem;
+    line-height: 1.4rem;
+    padding: .6rem 1rem
+}
+
+[class*=theme-46] .bets-scores-item:not(.red, .blue, .orange, .green, .yellow) {
+    background-color: #008cff40
+}
+
+.bets-scores-item.red {
+    background-color: rgba(var(--static-color-red), .3)
+}
+
+[class*=game-711] .bets-scores-item.red {
+    color: #f02
+}
+
+.bets-scores-item.blue {
+    background-color: rgba(var(--static-color-blue), .3)
+}
+
+[class*=game-711] .bets-scores-item.blue {
+    color: #ef5a00
+}
+
+.bets-scores-item.orange {
+    background-color: rgba(var(--static-color-orange), .3)
+}
+
+[class*=game-711] .bets-scores-item.orange {
+    color: #ddf154
+}
+
+.bets-scores-item.green {
+    background-color: rgba(var(--static-color-green), .2)
+}
+
+[class*=game-711] .bets-scores-item.green {
+    color: #ddf154
+}
+
+.bets-scores-item.yellow {
+    background-color: rgba(var(--static-color-dark-orange), .2)
+}
+
+[class*=game-711] .bets-scores-item {
+    background-color: rgba(var(--section-bg), 1) !important;
+    color: #959697;
+    height: 2.4rem;
+    margin: 0;
+    transition: margin .12s
+}
+
+.bets-actions {
+    align-items: stretch;
+    display: flex
+}
+
+.bets-actions-betting-range.disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+.bets-actions-betting-form {
+    flex: 1 1;
+    position: relative
+}
+
+[class*=is-Web] .bets-actions-betting-form {
+    background-color: rgba(var(--section-bg), 1);
+    border: 1px solid rgba(var(--section-bg), 1)
+}
+
+[class*=is-Mobile] .bets-actions-betting-form {
+    background-color: rgba(var(--custom-action-bg), 1);
+    border: .1rem solid rgba(var(--bet-section-item), 1)
+}
+
+[class*=is-Web] .bets-actions-betting-form.active {
+    border: 1px solid rgba(var(--hero-color), 1)
+}
+
+[class*=is-Mobile] .bets-actions-betting-form.active {
+    border: .1rem solid rgba(var(--hero-color), 1) !important
+}
+
+[class*=is-Web] .bets-actions-betting-form:not(:last-child) {
+    -webkit-margin-end: 10px;
+    margin-inline-end: 10px
+}
+
+[class*=is-Mobile] .bets-actions-betting-form:not(:last-child) {
+    -webkit-margin-end: .5rem;
+    margin-inline-end: .5rem
+}
+
+[class*=is-Web] .bets-actions-betting-form {
+    align-items: stretch;
+    border-radius: 16px;
+    display: flex;
+    padding: 6px
+}
+
+[class*=is-Mobile] .bets-actions-betting-form {
+    border-radius: 1.6rem;
+    padding: .6rem
+}
+
+.close-betting-form {
+    background: #62798d;
+    position: absolute
+}
+
+[class*=is-Web] .close-betting-form {
+    display: none
+}
+
+[class*=is-Mobile] .close-betting-form {
+    align-items: center;
+    border-radius: 10rem;
+    display: flex;
+    font-size: .6rem;
+    height: 2rem;
+    justify-content: center;
+    right: -.8rem;
+    top: -1rem;
+    width: 2rem
+}
+
+[class*=is-Web] .bets-actions-betting-form-bottom {
+    -webkit-margin-start: 10px;
+    flex: 0 0 45%;
+    margin-inline-start: 10px
+}
+
+.bets-amount-input-wrapper {
+    align-items: center;
+    background: rgba(var(--main-bg), 1);
+    background: rgba(var(--custom-input-color, var(--main-bg)), 1);
+    box-shadow: inset 0 0 20px #0003;
+    display: flex;
+    justify-content: space-between
+}
+
+.bets-amount-input-wrapper.error {
+    border: 1px solid #ff6448
+}
+
+[class*=is-Web] .bets-amount-input-wrapper {
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding: 4px
+}
+
+[class*=is-Web] .bets-amount-input-wrapper .btn-icon {
+    flex: 0 0 36px
+}
+
+[class*=is-Mobile] .bets-amount-input-wrapper {
+    border-radius: 1rem;
+    min-height: 4rem;
+    padding: .2rem
+}
+
+[class*=is-Mobile] .bets-amount-input-wrapper .btn-icon {
+    flex: 0 0 3.6rem
+}
+
+@media screen and (orientation:landscape) {
+    [class*=is-Mobile] .bets-amount-input-wrapper {
+        height: auto;
+        min-height: 3rem
+    }
+}
+
+[class*=game-617][class*=is-Mobile] .bets-amount-input-wrapper {
+    padding: .4rem
+}
+
+.bets-amount-input-label {
+    flex: 1 1;
+    height: 100%
+}
+
+[class*=is-Web] .bets-amount-input-label {
+    padding: 0 8px
+}
+
+[class*=is-Mobile] .bets-amount-input-label {
+    padding: 0 .8rem
+}
+
+.bets-amount-input {
+    background-color: #0000;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    flex: 1 1;
+    height: 100%;
+    padding: 0;
+    width: 100%
+}
+
+[class*=is-Web] .bets-amount-input {
+    font-size: 14px;
+    line-height: 16px
+}
+
+[class*=is-Mobile] .bets-amount-input {
+    font-size: 1.4rem;
+    line-height: 1.6rem
+}
+
+.bets-btn-icon {
+    align-items: center;
+    background-color: rgba(var(--bet-section-item), 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 2.2px 0 #00000026;
+    transition: background-color .3s ease-out
+}
+
+[class*=is-Web] .bets-btn-icon {
+    border-radius: 8px;
+    font-size: 26px;
+    height: 40px;
+    line-height: 30px;
+    width: 40px
+}
+
+[class*=is-Mobile] .bets-btn-icon {
+    border-radius: .8rem;
+    font-size: 2.6rem;
+    height: 3.6rem;
+    line-height: 3rem;
+    width: 3rem
+}
+
+[class*=game-617][class*=is-Web] .bets-btn-icon {
+    height: 34px;
+    width: 38px
+}
+
+[class*=game-617][class*=is-Web] .bets-btn-icon:hover {
+    opacity: .8
+}
+
+[class*=game-617][class*=is-Mobile] .bets-btn-icon {
+    height: 3.4rem;
+    width: 3.8rem
+}
+
+[class*=is-Web] .bets-btn-icon.decrease {
+    font-size: 20px
+}
+
+[class*=is-Mobile] .bets-btn-icon.decrease {
+    font-size: 2rem
+}
+
+.bets-btn-icon.disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+@media (hover:hover) {
+    .bets-btn-icon:hover {
+        background-color: rgba(var(--bet-section-item), .8)
+    }
+}
+
+.bets-btn-icon:active {
+    opacity: .7
+}
+
+.amount-range-wrapper {
+    align-items: center;
+    display: flex
+}
+
+[class*=is-Web] .amount-range-wrapper {
+    border-radius: 10px;
+    margin: 8px 0;
+    min-height: 42px;
+    padding: 4px
+}
+
+[class*=is-Mobile] .amount-range-wrapper {
+    border-radius: 1rem;
+    margin: .8rem 0;
+    min-height: 4.2rem;
+    padding: .4rem
+}
+
+.bets-action-suggestion {
+    align-items: stretch;
+    display: flex;
+    flex: 1 1;
+    z-index: 2
+}
+
+[class*=is-Mobile] .bets-action-suggestion {
+    margin: 1.2rem 0
+}
+
+.bets-cashout-action {
+    align-items: center;
+    background: rgba(var(--main-bg), 1);
+    background: rgba(var(--custom-input-color, var(--main-bg)), 1);
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.bets-cashout-action.disabled {
+    opacity: .75;
+    pointer-events: none
+}
+
+[class*=is-Web] .bets-cashout-action.selected {
+    border: 1px solid rgba(var(--hero-color), 1)
+}
+
+[class*=is-Mobile] .bets-cashout-action.selected {
+    border: .1rem solid rgba(var(--hero-color), 1)
+}
+
+.bets-cashout-action.selected .add-bet-icon {
+    background-color: rgba(var(--hero-color), 1);
+    color: rgba(var(--set-hero-color), 1)
+}
+
+[class*=is-Web] .bets-cashout-action.error {
+    border: 1px solid rgba(var(--static-color-red), 1)
+}
+
+[class*=is-Mobile] .bets-cashout-action.error {
+    border: .1rem solid rgba(var(--static-color-red), 1)
+}
+
+[class*=is-Web] .bets-cashout-action {
+    border-radius: 100px;
+    height: 40px;
+    margin-top: 8px;
+    padding: 6px 6px 6px 16px
+}
+
+[dir=rtl][class*=is-Web] .bets-cashout-action {
+    padding: 6px 16px 6px 6px;
+    text-align: left
+}
+
+[class*=is-Mobile] .bets-cashout-action {
+    border-radius: 10rem;
+    height: 4rem;
+    margin-top: 1.2rem;
+    padding: .6rem .6rem .6rem 1.6rem
+}
+
+@media screen and (orientation:landscape) {
+    [class*=is-Mobile] .bets-cashout-action {
+        height: 3rem
+    }
+}
+
+[dir=rtl][class*=is-Mobile] .bets-cashout-action {
+    padding: .6rem 1.6rem .6rem .6rem
+}
+
+.bets-cashout-action-text {
+    align-items: center;
+    display: flex;
+    flex: 1 1
+}
+
+.bets-cashout-input {
+    background: #0000;
+    border: 1px solid #0000;
+    color: #fff;
+    display: block;
+    width: 100%
+}
+
+.bets-cashout-input::placeholder {
+    color: inherit
+}
+
+[class*=is-Web] .bets-cashout-input {
+    -webkit-padding-end: 10px;
+    font-size: 12px;
+    padding-inline-end: 10px
+}
+
+[class*=is-Mobile] .bets-cashout-input {
+    -webkit-padding-end: 1rem;
+    font-size: 1rem;
+    padding-inline-end: 1rem
+}
+
+.bet-suggestion-item {
+    align-items: center;
+    background: rgba(var(--bet-section-item), 1);
+    cursor: pointer;
+    display: flex;
+    flex: 1 1;
+    font-weight: 600;
+    justify-content: center;
+    text-shadow: 0 2.2px 0 #00000026;
+    text-transform: uppercase;
+    transition: opacity .24s ease-in-out
+}
+
+@media (hover:hover) {
+    .bet-suggestion-item:hover {
+        opacity: .8
+    }
+}
+
+.bet-suggestion-item:active {
+    opacity: .7
+}
+
+[class*=is-Web] .bet-suggestion-item:not(:last-child) {
+    -webkit-margin-end: 6px;
+    margin-inline-end: 6px
+}
+
+[class*=is-Mobile] .bet-suggestion-item:not(:last-child) {
+    -webkit-margin-end: .6rem;
+    margin-inline-end: .6rem
+}
+
+[class*=is-Web] .bet-suggestion-item {
+    border-radius: 10px;
+    font-size: 12px;
+    height: 40px;
+    line-height: 14px;
+    padding: 10px
+}
+
+[class*=is-Mobile] .bet-suggestion-item {
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    height: 3.6rem;
+    line-height: 1.4rem;
+    padding: 1rem;
+    width: 3.6rem
+}
+
+@media screen and (orientation:landscape) {
+    [class*=is-Mobile] .bet-suggestion-item {
+        height: 3rem
+    }
+}
+
+.bet-suggestion-item.active {
+    opacity: .7
+}
+
+.bet-suggestion-item.disabled {
+    opacity: .3;
+    pointer-events: none
+}
+
+[class*=game-617][class*=is-Mobile] .bet-suggestion-item:nth-child(2) {
+    -webkit-margin-end: 10.6rem;
+    margin-inline-end: 10.6rem
+}
+
+.bets-action-button-text {
+    color: #1e272e;
+    font-weight: 600
+}
+
+[class*=is-Web] .bets-action-button-text {
+    font-size: 16px;
+    line-height: 18px
+}
+
+[class*=is-Mobile] .bets-action-button-text {
+    font-size: 1.6rem;
+    line-height: 1.8rem
+}
+
+.bets-popup {
+    background: rgba(var(--main-bg), 1);
+    background: rgba(var(--custom-input-color, var(--main-bg)), 1);
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute
+}
+
+[class*=is-Web] .bets-popup {
+    border-radius: 10px;
+    height: calc(100% - 10px);
+    left: 5px;
+    padding: 12px;
+    top: 5px;
+    width: calc(100% - 10px)
+}
+
+[class*=is-Mobile] .bets-popup {
+    border-radius: 1rem;
+    height: calc(100% - 1.2rem);
+    left: .6rem;
+    padding: 1.2rem;
+    top: .6rem;
+    width: calc(100% - 1.2rem)
+}
+
+.add-bet-icon {
+    align-items: center;
+    background: rgba(var(--bet-section-item), .8);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center
+}
+
+[class*=is-Web] .add-bet-icon {
+    border: 1px solid rgba(var(--hero-color), 1);
+    height: 26px;
+    margin: 0 8px;
+    width: 26px
+}
+
+[class*=is-Mobile] .add-bet-icon {
+    border: .1rem solid rgba(var(--hero-color), 1);
+    height: 2.6rem;
+    margin: 0 .8rem;
+    width: 2.6rem
+}
+
+.close-bets-popup {
+    cursor: pointer
+}
+
+[class*=is-Web] .close-bets-popup {
+    font-size: 10px
+}
+
+[class*=is-Mobile] .close-bets-popup {
+    font-size: 1rem
+}
+
+.bet-mobile-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    justify-self: center;
+    transition: background-color .3s ease-out
+}
+
+.bet-mobile-item:not(.buttonItem) {
+    background-color: rgba(var(--bet-section-item), 1)
+}
+
+.bet-mobile-item:active {
+    opacity: .8
+}
+
+@media (hover:hover) {
+    .bet-mobile-item:not(.buttonItem):hover {
+        background-color: rgba(var(--bet-section-item), .8)
+    }
+}
+
+[class*=is-Web] .bet-mobile-item {
+    border-radius: 10px;
+    font-size: 12px;
+    height: 36px;
+    line-height: 14px;
+    padding: 4px 10px;
+    width: 100%
+}
+
+[class*=is-Web] .bet-mobile-item.add-bet {
+    background: rgba(var(--hero-color), .2);
+    border: 1px solid rgba(var(--hero-color), 1);
+    border-radius: 10px
+}
+
+[class*=is-Mobile] .bet-mobile-item {
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    height: 3.6rem;
+    line-height: 1.4rem;
+    padding: .6rem;
+    width: 4rem
+}
+
+[class*=is-Mobile] .bet-mobile-item.add-bet {
+    background: rgba(var(--hero-color), .2);
+    border: .1rem solid rgba(var(--hero-color), 1);
+    border-radius: 1rem
+}
+
+[class*=is-Mobile] .bet-mobile-item:last-child:not(.buttonItem) {
+    font-size: .8rem
+}
+
+.bet-mobile-item.buttonItem {
+    background: rgba(var(--bet-btn), 1);
+    background: var(--bet-btn-gradient, rgba(var(--bet-btn), 1));
+    color: rgba(var(--set-hero-color), 1);
+    position: relative;
+    text-transform: uppercase;
+    transition: opacity .12s;
+    z-index: 10
+}
+
+[class*=is-Web] .bet-mobile-item.buttonItem:hover {
+    opacity: .8
+}
+
+[class*=is-Mobile] .bet-mobile-item.buttonItem {
+    grid-column: span 3;
+    margin-top: 1rem;
+    width: 100%
+}
+
+[class*=is-Mobile] .bet-mobile-item.buttonItem:active {
+    opacity: .8
+}
+
+.bets-mobile-suggestion {
+    display: grid;
+    flex: 0 0 auto;
+    margin-top: auto
+}
+
+[class*=is-Web] .bets-mobile-suggestion {
+    grid-gap: 6px;
+    grid-template-columns: repeat(6, 1fr)
+}
+
+[class*=is-Mobile] .bets-mobile-suggestion {
+    grid-gap: .4rem;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.bets-popup-heading {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between
+}
+
+[class*=is-Web] .bets-popup-heading {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: .4rem
+}
+
+[class*=is-Mobile] .bets-popup-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    margin-bottom: .2rem
+}
+
+.last-statistics-popup-layer {
+    align-items: center;
+    background: #00000080;
+    bottom: 0;
+    /* display: flex; */
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+}
+
+.last-statistics-popup {
+    background-color: rgba(var(--wrapper-bg), 1);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto 11fr;
+    left: 50%;
+    min-width: 0;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+[class*=is-Web] .last-statistics-popup {
+    border-radius: 16px;
+    height: 660px;
+    padding: 50px 30px;
+    width: 1200px
+}
+
+[class*=is-Mobile] .last-statistics-popup {
+    border-radius: 1.6rem;
+    height: 80%;
+    padding: 3rem 1rem;
+    width: 96%
+}
+
+.last-statistics-popup-title {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+[class*=is-Web] .last-statistics-popup-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 30px;
+    padding: 0 10px
+}
+
+[class*=is-Mobile] .last-statistics-popup-title {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem
+}
+
+.last-statistics-list {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+    overflow: auto;
+    width: 100%
+}
+
+.last-statistics-list-item {
+    text-align: center
+}
+
+[class*=is-Web] .last-statistics-list-item {
+    margin: 6px
+}
+
+[class*=is-Mobile] .last-statistics-list-item {
+    margin: .6rem
+}
+
+.last-statistics-round-item {
+    align-items: center;
+    background-color: rgba(var(--bet-section-item), .3);
+    color: #fff;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center
+}
+
+.last-statistics-round-item.red {
+    background-color: rgba(var(--static-color-red), .3)
+}
+
+.last-statistics-round-item.blue {
+    background-color: rgba(var(--static-color-blue), .3)
+}
+
+.last-statistics-round-item.orange {
+    background-color: rgba(var(--static-color-orange), .3)
+}
+
+[class*=is-Web] .last-statistics-round-item {
+    border-radius: 100px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 14px;
+    padding: 10px;
+    width: 100px
+}
+
+[class*=is-Mobile] .last-statistics-round-item {
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    height: 4rem;
+    line-height: 1.4rem;
+    padding: 1rem;
+    width: 10rem
+}
+
+.close-popup-btn {
+    cursor: pointer;
+    position: absolute
+}
+
+[class*=is-Web] .close-popup-btn {
+    right: 20px;
+    top: 20px
+}
+
+[class*=is-Mobile] .close-popup-btn {
+    right: 2rem;
+    top: 2rem
+}
+
+.last-statistics-round {
+    color: #fff;
+    font-weight: 400;
+    text-align: center
+}
+
+[class*=is-Web] .last-statistics-round {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: .6rem
+}
+
+.betActionsRowMobile {
+    min-width: 0
+}
+
+[class*=is-Mobile] .betActionsRowMobile {
+    align-items: center;
+    display: flex;
+    gap: .5rem
+}
+
+.betActionPopover {
+    flex: 0 0 auto;
+    margin-bottom: .6rem;
+    margin-top: auto;
+    position: relative;
+    z-index: 20
+}
+
+.betActionPopover.open .betActionPopoverHead {
+    background-color: rgba(var(--hero-color), 1)
+}
+
+.betActionPopover.open .betActionPopoverContent {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    pointer-events: all
+}
+
+.betActionPopover.disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+.betActionPopover.disabled .betActionPopoverHead {
+    border-color: rgba(var(--hero-color), .5)
+}
+
+.betActionPopoverHead {
+    align-items: center;
+    background-color: rgba(var(--bet-section-item), 1);
+    border: .1rem solid #0000;
+    border-radius: 1.2rem;
+    display: flex;
+    flex: 0 0 auto;
+    gap: .2rem;
+    height: 5rem;
+    justify-content: center;
+    transition: background-color .12s ease-in-out, border .12s ease-in-out;
+    width: 5rem
+}
+
+@media screen and (orientation:landscape) {
+    [class*=is-Mobile] .betActionPopoverHead {
+        height: 4rem;
+        width: 4rem
+    }
+}
+
+.betActionPopoverHeadText {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700
+}
+
+@media screen and (orientation:landscape) {
+    [class*=is-Mobile] .betActionPopoverHeadText {
+        font-size: 1.4rem
+    }
+}
+
+.betActionPopoverHeadIcon {
+    font-size: 1.5rem
+}
+
+@media screen and (orientation:landscape) {
+    [class*=is-Mobile] .betActionPopoverHeadIcon {
+        font-size: 1.2rem
+    }
+}
+
+.betActionPopoverContent {
+    background-color: rgba(var(--wrapper-bg), 1);
+    border-radius: 1.2rem;
+    bottom: 100%;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    left: 0;
+    margin-bottom: .6rem;
+    padding: .6rem;
+    pointer-events: none;
+    position: absolute;
+    transition: -webkit-clip-path .12s ease-in-out;
+    transition: clip-path .12s ease-in-out;
+    transition: clip-path .12s ease-in-out, -webkit-clip-path .12s ease-in-out;
+    width: 100%
+}
+
+.betActionPopoverItem {
+    align-items: center;
+    background-color: rgba(var(--bet-section-item), 1);
+    border: .1rem solid #0000;
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    font-size: 1.2rem;
+    height: 3.8rem;
+    justify-content: center;
+    transition: border .12s;
+    width: 100%
+}
+
+.betActionPopoverItem.active {
+    border-color: #4a94fd
+}
+
+.betsPopupName {
+    color: #fff
+}
+
+[class*=is-Web] .betsPopupName {
+    font-size: 12px
+}
+
+[class*=is-Mobile] .betsPopupName {
+    font-size: 1.2rem
+}
+
+.betTotalRow {
+    align-items: center;
+    display: flex
+}
+
+[class*=is-Web] .betTotalRow {
+    gap: 12px;
+    margin-bottom: 8px
+}
+
+[class*=is-Mobile] .betTotalRow {
+    gap: .8rem;
+    margin-bottom: .6rem
+}
+
+.betTotalRowColumn {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem
+}
+
+[class*=is-Web] .betTotalRowText {
+    font-size: 12px;
+    line-height: 14px
+}
+
+[class*=is-Mobile] .betTotalRowText {
+    font-size: 1.2rem;
+    line-height: 1.4rem
+}
+
+.betTotalRowText:not(.money) {
+    color: #fff
+}
+
+.betTotalRowText.money {
+    color: rgba(var(--hero-color), 1);
+    font-weight: 700
+}
+
+[class*=game-713] .betTotalRowText.money,
+[class*=theme-29] .betTotalRowText.money,
+[class*=theme-39] .betTotalRowText.money,
+[class*=theme-43] .betTotalRowText.money,
+[class*=theme-45] .betTotalRowText.money,
+[class*=theme-47] .betTotalRowText.money,
+[class*=theme-52] .betTotalRowText.money,
+[class*=theme-55] .betTotalRowText.money,
+[class*=theme-56] .betTotalRowText.money,
+[class*=theme-58] .betTotalRowText.money,
+[class*=theme-59] .betTotalRowText.money,
+[class*=theme-60] .betTotalRowText.money,
+[class*=theme-63] .betTotalRowText.money,
+[class*=theme-67] .betTotalRowText.money,
+[class*=theme-72] .betTotalRowText.money,
+[class*=theme-74] .betTotalRowText.money,
+[class*=theme-76] .betTotalRowText.money,
+[class*=theme-82] .betTotalRowText.money,
+[class*=theme-88] .betTotalRowText.money,
+[class*=theme-89] .betTotalRowText.money,
+[class*=theme-90] .betTotalRowText.money,
+[class*=theme-92] .betTotalRowText.money {
+    -webkit-text-fill-color: #0000;
+    background: var(--bet-btn-gradient);
+    -webkit-background-clip: text;
+    color: rgba(var(--hero-color), 1)
+}
+
+@supports not (-webkit-text-fill-color:transparent) {
+
+    [class*=game-713] .betTotalRowText.money,
+    [class*=theme-29] .betTotalRowText.money,
+    [class*=theme-39] .betTotalRowText.money,
+    [class*=theme-43] .betTotalRowText.money,
+    [class*=theme-45] .betTotalRowText.money,
+    [class*=theme-47] .betTotalRowText.money,
+    [class*=theme-52] .betTotalRowText.money,
+    [class*=theme-55] .betTotalRowText.money,
+    [class*=theme-56] .betTotalRowText.money,
+    [class*=theme-58] .betTotalRowText.money,
+    [class*=theme-59] .betTotalRowText.money,
+    [class*=theme-60] .betTotalRowText.money,
+    [class*=theme-63] .betTotalRowText.money,
+    [class*=theme-67] .betTotalRowText.money,
+    [class*=theme-72] .betTotalRowText.money,
+    [class*=theme-74] .betTotalRowText.money,
+    [class*=theme-76] .betTotalRowText.money,
+    [class*=theme-82] .betTotalRowText.money,
+    [class*=theme-88] .betTotalRowText.money,
+    [class*=theme-89] .betTotalRowText.money,
+    [class*=theme-90] .betTotalRowText.money,
+    [class*=theme-92] .betTotalRowText.money {
+        background-image: none
+    }
+}
+
+@supports not (-webkit-background-clip:text) {
+
+    [class*=game-713] .betTotalRowText.money,
+    [class*=theme-29] .betTotalRowText.money,
+    [class*=theme-39] .betTotalRowText.money,
+    [class*=theme-43] .betTotalRowText.money,
+    [class*=theme-45] .betTotalRowText.money,
+    [class*=theme-47] .betTotalRowText.money,
+    [class*=theme-52] .betTotalRowText.money,
+    [class*=theme-55] .betTotalRowText.money,
+    [class*=theme-56] .betTotalRowText.money,
+    [class*=theme-58] .betTotalRowText.money,
+    [class*=theme-59] .betTotalRowText.money,
+    [class*=theme-60] .betTotalRowText.money,
+    [class*=theme-63] .betTotalRowText.money,
+    [class*=theme-67] .betTotalRowText.money,
+    [class*=theme-72] .betTotalRowText.money,
+    [class*=theme-74] .betTotalRowText.money,
+    [class*=theme-76] .betTotalRowText.money,
+    [class*=theme-82] .betTotalRowText.money,
+    [class*=theme-88] .betTotalRowText.money,
+    [class*=theme-89] .betTotalRowText.money,
+    [class*=theme-90] .betTotalRowText.money,
+    [class*=theme-92] .betTotalRowText.money {
+        background-image: none;
+        text-transform: uppercase
+    }
+}
+
+.mega-wheel-bet-slip {
+    align-items: center;
+    direction: ltr !important;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 2
+}
+
+[class*=is-Web] .mega-wheel-bet-slip {
+    margin: auto auto 0
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip {
+    margin: auto auto 3rem
+}
+
+.mega-wheel-bet-slip .bet-suggestion-item {
+    font-weight: 500
+}
+
+[class*=is-Web] .mega-wheel-bet-slip .bet-suggestion-item {
+    font-size: 14px;
+    height: 42px;
+    line-height: 18px
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip .bet-suggestion-item {
+    font-size: 1.4rem;
+    height: 4rem;
+    line-height: 1.8rem
+}
+
+.mega-wheel-bet-slip .bets-amount-input-wrapper {
+    margin-bottom: 0
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip .bets-amount-input-wrapper {
+    height: 4.4rem
+}
+
+.mega-wheel-bet-slip .bets-action-suggestion {
+    flex: 0 0 auto;
+    margin: 0
+}
+
+.mega-wheel-bet-slip-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+[class*=is-Web] .mega-wheel-bet-slip-content {
+    -webkit-padding-end: 46px;
+    -webkit-padding-start: 14px;
+    height: 124px;
+    justify-content: center;
+    padding-inline-end: 46px;
+    padding-inline-start: 14px;
+    width: 326px
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip-content {
+    height: 15rem;
+    padding: 2rem 1rem 0;
+    width: 32.7rem
+}
+
+.mega-wheel-slip-svg {
+    fill: rgba(var(--section-bg), 1);
+    display: block;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+[class*=is-Mobile] .mega-wheel-slip-svg.for-web,
+[class*=is-Web] .mega-wheel-slip-svg.for-mobile {
+    display: none
+}
+
+.stopColorGr {
+    stop-color: rgba(var(--bet-section-item), 1)
+}
+
+.mega-wheel-bet-slip-inner {
+    align-items: center;
+    display: flex;
+    gap: .8rem;
+    width: 100%;
+    z-index: 2
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip-inner {
+    margin-top: -.8rem
+}
+
+.mega-wheel-bet-slip-inner .bet-suggestion-item {
+    flex: 0 0 auto;
+    margin: 0 !important;
+    padding: 0
+}
+
+[class*=is-Web] .mega-wheel-bet-slip-inner .bet-suggestion-item {
+    width: 4.8rem
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip-inner .bet-suggestion-item {
+    width: 4.6rem
+}
+
+.mega-wheel-bet-slip-button {
+    align-items: center;
+    background: rgba(var(--hero-color), 1);
+    background: var(--bet-btn-gradient, rgba(var(--hero-color), 1));
+    border-radius: 50%;
+    box-shadow: 0 17px 23px 0 hsla(0, 0%, 4%, .251), inset 3px 4px 8px 0 hsla(0, 0%, 100%, .698), inset -10px -12px 18px 0 rgba(0, 0, 0, .251), inset 0 2px 2px 0 #fff9, inset 6px 9px 9px 0 hsla(0, 0%, 100%, .102), inset 0 -2px 8px 0 hsla(0, 0%, 100%, .251);
+    color: rgba(var(--set-hero-color), 1);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transition: opacity .12s;
+    z-index: 10
+}
+
+[class*=is-Web] .mega-wheel-bet-slip-button {
+    height: 90px;
+    inset-inline-start: 100%;
+    margin-left: -27px;
+    top: -6px;
+    width: 90px
+}
+
+[class*=is-Web] .mega-wheel-bet-slip-button:hover {
+    opacity: .8
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip-button {
+    height: 8rem;
+    left: 0;
+    margin: -5.8rem auto 0;
+    right: 0;
+    top: 100%;
+    width: 8rem
+}
+
+.mega-wheel-bet-slip-button:active {
+    transform: scale(.98)
+}
+
+.mega-wheel-bet-slip-button.disabled,
+.mega-wheel-bet-slip-button:disabled {
+    cursor: not-allowed;
+    filter: grayscale(60%);
+    opacity: .5;
+    pointer-events: none
+}
+
+.mega-wheel-turbo-mode {
+    align-items: center;
+    background: linear-gradient(180deg, #9862ff, #6340dd);
+    border-radius: 50%;
+    box-shadow: 0 5px 0 0 #00000040, 0 3px 0 0 #3c24a4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: absolute
+}
+
+[class*=is-Web] .mega-wheel-turbo-mode {
+    bottom: -9px;
+    font-size: 24px;
+    height: 42px;
+    right: -8px;
+    width: 42px
+}
+
+[class*=is-Web] .mega-wheel-turbo-mode:hover {
+    background: linear-gradient(180deg, #a67afa, #7d60e1)
+}
+
+[class*=is-Web] .mega-wheel-turbo-mode.on:hover {
+    background: linear-gradient(180deg, #ffcf2d, #ff923f)
+}
+
+[class*=is-Mobile] .mega-wheel-turbo-mode {
+    font-size: 2.4rem;
+    height: 4.2rem;
+    margin-top: -2.6rem;
+    right: 3.8rem;
+    top: 100%;
+    width: 4.2rem
+}
+
+.mega-wheel-turbo-mode.disabled,
+.mega-wheel-turbo-mode:disabled {
+    opacity: .3;
+    pointer-events: none
+}
+
+.mega-wheel-turbo-mode.on {
+    background: linear-gradient(180deg, #ffc500, #fe7e1c);
+    box-shadow: 0 5px 0 0 #00000040, 0 3px 0 0 #873700
+}
+
+.mega-wheel-bet-slip-button-icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA7CAYAAADFJfKzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPJSURBVHgB7VvbVeMwEJ1w+F86WHdAOkhKoAPSQdgKCBWErcB0wNkKHCqArcCmgrAV3B0hmTgTPWwntozhnjPYsZ5Xj9FIGoi+ECbUEQBc8OOK5ZIlYZmyXBipojDyYuRpMpkUNHQogiwrlgzHIWdZsyQ0NHCl5icg6ELGck2xwZWYojuSErkqj45AqzkLPR9vWG5rRN+QnouFkTcRrggk5jmnMB5Y7nzzGnr4L83P3611gMqI5dnTA1uWR5aZaZSm+at0qcmnVS+b8I+41AbQc3PrIXnbhqCjLNWoC1FxiRtLuqkl3k9qAlOwC+tTkXSUfespeyXiXskI1AQeojnLjHoAdE/nIcKm4avImhQydxSQocPe9NRn7ajPjQnPxPd13YxdrZlSRMA9rG06pd4aPUSiJRyEbcozvDZDm30S9cf/CQFthl7JisM9pD/I18k8sSTMEcFWxeHQVO+ZIbqAfz0Odw70oi7Ri9atWZe62FNOZ5bME34sxOcHNrmeKA4Kao+NN9TSkltE3GpBz9cU/uHqwtSXsW2uDkL7KkCbgmqeqvmaBYjmocxsllJCA0alAVLsNihqFFyHEmaC6CONEdBzQyL+CUEXgGW3gAi2b5eoLj2XIuyFl5s3GhGqZKWaLmhkqJKVQ/aFRoYq2USEFTQyfCmy5zRCIHSUKgyKfOiWkw8IHaUao2JtzK6jTt5jAnb7vtlR6meBj+wZjQ82q++f+vMlyJaW4BjJHpi95csYyc7F76J8GSNZuZJsypdRkTVLZiI+h238z7iXxeFh4Z5BcW5JoFpHHS4rI6Mg3TIblr80/D3uXPzeeGMjfGqnDrXUzfoS+rR+ECMA9sPCWShRG6gGSCgicHgJFzxKnaI9olx6mXqvLPUJHqUu0B7PFAHQtrC8LbD2qlRQl558lWL6xfKDtCJIaH9Nu6c4eFem4tsqmAp+lx+Y8ItKfKWxZ4i0heJy7y11rHddY0lou0waxC0B7PM0Rx1FCbujyMxFGBGXHAfR9/rWzWApEm7Nd5eG7n25gZ4294761HEt/MgoFYmzSpjPD6qX+yD43QjrEzWZPfsygH9ZStFRL2Pnw7w9CVGTqcxsZokzhd+XMD0V6RokFZbUBtBKp0QOhwKC362uRMZy3ZS4IagU5Rphr9TGDi0TUdiCtNHwJ+SjCz18VhRG6Wu8YXmlfX/jxJSnnlPa/R+BD8p4uet992V6OUU/yBDJPalP0tkgSEpg5xCd4Tjk0L6JJyXZ5f/1JKQ3FnPazcWE9ufkm5FyXr+fivB8fKVvHIf/NVkq6gSkYDUAAAAASUVORK5CYII=);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 0 0 auto;
+    position: absolute;
+    transform-origin: center
+}
+
+.mega-wheel-bet-slip-button-icon.spin-infinite {
+    animation: rotateAnimation 1.5s linear infinite
+}
+
+.mega-wheel-bet-slip-button-icon.spin-once {
+    animation: rotateAnimation 1.5s linear 1
+}
+
+.mega-wheel-bet-slip-button-icon.spin-once.error {
+    animation: rotateAnimation .5s linear 1
+}
+
+[class*=is-Web] .mega-wheel-bet-slip-button-icon {
+    height: 59px;
+    width: 59px
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip-button-icon {
+    height: 55px;
+    width: 55px
+}
+
+.mega-wheel-bet-slip-button-stop-icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABBSURBVHgB7ZKxDQAgCARfJ3Ez3Bw3kA1eSOyF3ks+oeC6A8np23yjPmlxABjIYSEQBTqKfCErWOF/4aahiTQiHznpYmeNblEUsgAAAABJRU5ErkJggg==);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 0 0 auto;
+    position: absolute;
+    transform-origin: center
+}
+
+[class*=is-Web] .mega-wheel-bet-slip-button-stop-icon {
+    height: 12px;
+    width: 12px
+}
+
+[class*=is-Mobile] .mega-wheel-bet-slip-button-stop-icon {
+    height: 10px;
+    width: 10px
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.stats-mega-wheel {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%
+}
